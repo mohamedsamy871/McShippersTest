@@ -1,12 +1,35 @@
 <div class="login-page">
     <div class="container-sm">
         <div class="sign-in">
-            <h1>Sign In</h1>
+            <h2>Sign In</h2>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" routerLink="login">I'm an Employer</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  routerLink="login">I'm a Job Seeker</a>
+                </li>
+            </ul>
             <form action="">
-                <input type="text" placeholder="Email"/>
-                <input type="text" placeholder="Password"/>
-                <button type="submit">Login </button>
+                <input class="form-control" type="text" placeholder="Email Address" aria-label="default input example">
+                <input class="form-control" type="text" placeholder="Password" aria-label="default input example">
+                <button type="submit" class="btn">Login </button>
             </form>
+            <a routerLink="/forget">
+                Forgot Password?
+              </a>
+              <a routerLink="/activate-email">
+                Activate Email?
+              </a>
+              <a routerLink="/change-password">
+                Change Password?
+              </a>
+              <p class="register-link">
+                New to ZipRecruiter?
+                <a routerLink="/register">
+                  Create a job seeker profile
+                </a>
+              </p>
         </div>
     </div>
 </div>
