@@ -1,0 +1,42 @@
+footer{
+    padding:50px 0;
+}
+footer hr{
+    background-color: #b0b0b0;
+}
+footer .logo-container{
+    text-align: right;
+}
+footer h2{
+    font-size: 17px;
+    font-weight: 400;
+    color: #2f3639;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+footer ul{
+    list-style-type: none;
+    padding-left: 0!important;
+}
+footer ul li{
+    padding: 5px;
+}
+footer a{
+    padding: 0;
+    display: block;
+    color: #72777c;
+    text-decoration: none;
+
+}
+footer .last-part{
+    text-align: center;
+    font-size: 0.8rem;
+}
+footer .last-part a{
+    display: inline-block;
+    font-size: 0.8rem;
+    padding-right:8PX;
+}
+footer .last-part .copy-write{
+    margin-top: 10px;
+}

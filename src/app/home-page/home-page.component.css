@@ -1,0 +1,49 @@
+
+.banner-section{
+    background-image: url('/../assets/banner.jpg');
+    background-size: cover;
+    min-height: 970px;
+}
+.banner-section .caption-text{
+    margin-top: 40%;
+}
+.banner-section .caption-text h2,
+.banner-section .caption-text p{
+    color: #fff;
+}
+.banner-section .caption-text a{
+    display: inline-block;
+    text-decoration: none;
+}
+.banner-section .caption-text .get-started{
+    letter-spacing: 0;
+    display: inline-block;
+    text-decoration: none;
+    text-shadow: none;
+    -webkit-appearance: none;
+    transition: background-color .1s linear,border-color .1s linear;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 2em;
+    outline: 0;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    background: #277f6a none;
+    border: 1px solid #277f6a;
+    max-width: 320px;
+    font-weight: 700;
+    padding: 9px 40px 9px 40px;
+    line-height: 23px;
+    white-space: normal;
+    width: auto;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.banner-section .caption-text .hiring{
+    display: block;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 30px;
+    text-decoration: underline;
+}

@@ -1,0 +1,77 @@
+header{
+    padding-top:14px;
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+header .container{
+    max-width: 1500px!important;
+}
+.logo{
+    display: inline-block;
+}
+.logo a img {
+    width:75%;
+}
+.nav{
+    margin-top: 5px;
+}
+.nav .nav-item a{
+    font-size: 15px;
+    padding: 0 10px;
+    color: #2f3639;
+}
+.dropdown-menu {
+    border-radius: 0;
+    border: 1px solid rgba(0,0,0,0.08);
+    top: 17px!important;
+}
+.dropdown-menu .employee_count{
+    margin-left: 16px;
+    color: #777;
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+}
+.dropdown-menu li {
+    padding: 4px 13px;
+
+}
+.dropdown-menu li a{
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.secondary-area{
+    text-align: right;
+}
+.secondary-area .secondary-nav a{
+    margin-right: 10px;
+    text-decoration: none;
+}
+.secondary-area .secondary-nav .post-job{
+    letter-spacing: 0;
+    display: inline-block;
+    text-decoration: none;
+    text-shadow: none;
+    -webkit-appearance: none;
+    transition: background-color .1s linear,border-color .1s linear;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 2em;
+    outline: 0;
+    font-family: Arial,sans-serif;
+    color: #277f6a;
+    background: #fff none;
+    border: 1px solid #d8dbdc;
+    max-width: 240px;
+    font-weight: 700;
+    padding: 7px 20px 7px 20px;
+    line-height: 20px;
+    white-space: normal;
+    width: auto;
+    font-size: 14px;
+    margin-top: -4px;
+}
+.secondary-area .secondary-nav .sign-in{
+    color: #2f3639;
+    font-size: 14px;
+    
+}
