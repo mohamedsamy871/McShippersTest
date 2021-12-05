@@ -4,10 +4,12 @@
             <h2>Sign In</h2>
             <ul class="nav nav-pills">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" routerLink="login">I'm an Employer</a>
+                  <a class="nav-link" aria-current="page" routerLink="login" (click)="employerMode()"
+                  [class]="switchingButton=='employer'?'active':''">I'm an Employer</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link"  routerLink="login">I'm a Job Seeker</a>
+                  <a class="nav-link"  routerLink="login" (click)="seekerMode()"
+                  [class]="switchingButton=='seeker'?'active':''">I'm a Job Seeker</a>
                 </li>
             </ul>
             <form [formGroup]="form" (ngSubmit)="submitForm()">
@@ -27,7 +29,10 @@
             </a>
             <p class="register-link">
               New to ZipRecruiter?
-              <a routerLink="/register">
+              <a *ngIf="switchingButton=='employer'" routerLink="/post-job">
+                Post a job for free
+              </a>
+              <a *ngIf="switchingButton=='seeker'" routerLink="/register">
                 Create a job seeker profile
               </a>
             </p>

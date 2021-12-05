@@ -8,7 +8,12 @@ import { FormBuilder ,FormGroup } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  //active button switching
+  switchingButton ='employer';
+
+
   form:FormGroup;
+  
   constructor(private http:HttpClient,private _formBuilder:FormBuilder) { 
     this.form = this._formBuilder.group({
       email: [''],
@@ -29,4 +34,11 @@ export class LoginComponent implements OnInit {
       (error) => console.log(error)
     )
   }
+  employerMode(){
+    this.switchingButton = 'employer';
+  }
+  seekerMode(){
+    this.switchingButton = 'seeker';
+  }
+  
 }

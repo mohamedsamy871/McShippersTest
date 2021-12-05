@@ -6,6 +6,7 @@ import { ForgetPasswordComponent } from './Authentication/forget-password/forget
 import { RegisterComponent } from './Authentication/register/register.component';
 import { ChangePasswordComponent } from './Authentication/change-password/change-password.component';
 import { ActivateEmailComponent } from './Authentication/activate-email/activate-email.component';
+import { PostJobComponent } from './Authentication/post-job/post-job.component';
 const routes: Routes = [
   {
     component: HomePageComponent,
@@ -30,6 +31,10 @@ const routes: Routes = [
   {
     component: ActivateEmailComponent,
     path:'activate-email'
+  },
+  {
+    component: PostJobComponent,
+    path:'post-job'
   },
 ];
 
