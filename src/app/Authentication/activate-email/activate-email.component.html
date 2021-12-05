@@ -1,7 +1,13 @@
 <div class="login-page">
     <div class="container-sm">
         <div class="sign-in">
-            <h2>Your Email was Successfully Activted</h2>
+            <h2>Resend Activation Email </h2>
+            <p>Enter the email address for your ZipRecruiter account below and we will email you a link to activate your account. </p>
+            <form [formGroup]="form" (ngSubmit)="submitForm()">
+                <input class="form-control" type="text" placeholder="Email Address" formControlName="email">
+                <input type="hidden" formControlName="platformType">
+                <button type="submit" class="btn">Resend Email </button>
+            </form>
             <a id="forgotPasswordLink" routerLink="/login">
                 Go to Sign In Page
               </a>

@@ -10,26 +10,27 @@
                   <a class="nav-link"  routerLink="login">I'm a Job Seeker</a>
                 </li>
             </ul>
-            <form action="">
-                <input class="form-control" type="text" placeholder="Email Address" aria-label="default input example">
-                <input class="form-control" type="text" placeholder="Password" aria-label="default input example">
+            <form [formGroup]="form" (ngSubmit)="submitForm()">
+                <input class="form-control" type="text" placeholder="Email Address" formControlName="email">
+                <input class="form-control" type="password" placeholder="Password" formControlName="password">
+                <input type="hidden" formControlName="platformType">
                 <button type="submit" class="btn">Login </button>
             </form>
             <a routerLink="/forget">
                 Forgot Password?
+            </a>
+            <a routerLink="/activate-email">
+              Activate Email?
+            </a>
+            <a routerLink="/change-password">
+              Change Password?
+            </a>
+            <p class="register-link">
+              New to ZipRecruiter?
+              <a routerLink="/register">
+                Create a job seeker profile
               </a>
-              <a routerLink="/activate-email">
-                Activate Email?
-              </a>
-              <a routerLink="/change-password">
-                Change Password?
-              </a>
-              <p class="register-link">
-                New to ZipRecruiter?
-                <a routerLink="/register">
-                  Create a job seeker profile
-                </a>
-              </p>
+            </p>
         </div>
     </div>
 </div>

@@ -1,8 +1,12 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&display=swap');
 .banner-section{
     background-image: url('/../assets/banner.jpg');
     background-size: cover;
-    min-height: 970px;
+    height: 100vh;
+    overflow: auto;
+}
+.banner-section .container{
+    max-width: 1450px!important;
 }
 .banner-section .caption-text{
     margin-top: 40%;
@@ -10,6 +14,19 @@
 .banner-section .caption-text h2,
 .banner-section .caption-text p{
     color: #fff;
+}
+.banner-section .caption-text h2{
+    font-size: 2.5rem;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+.banner-section .caption-text p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.banner-section .caption-text h2 span{
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: regular;
 }
 .banner-section .caption-text a{
     display: inline-block;
@@ -46,4 +63,16 @@
     font-weight: 700;
     margin-top: 30px;
     text-decoration: underline;
+}
+.banner-section .banner-lower-caption{
+    text-align: center;
+    padding-top: 30px;
+}
+.banner-section .banner-lower-caption .star-container i{
+    color:#f2c406;  
+    font-size: 1.3rem;
+    margin-right:7px;
+}
+.banner-section .banner-lower-caption h4{
+    color: #fff;
 }
