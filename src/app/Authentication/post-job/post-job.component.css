@@ -37,9 +37,14 @@
     margin-right: 15px;
     margin-top: 25px;
 }
-.banner-section .sign-in form input{
+.banner-section .sign-in form select{
+    padding:12px;
     border-radius: 0;
-    margin-bottom: 15px;
+
+}
+.banner-section .sign-in form select:focus{
+    border: 1px solid #277f6a !important;
+    box-shadow: 0 0 0 1px #277f6a !important;
 }
 .banner-section .sign-in form button{
     letter-spacing: 0;
