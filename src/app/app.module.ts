@@ -12,7 +12,8 @@ import { ChangePasswordComponent } from './Authentication/change-password/change
 import { ForgetPasswordComponent } from './Authentication/forget-password/forget-password.component';
 import { ActivateEmailComponent } from './Authentication/activate-email/activate-email.component';
 import { FormsModule,ReactiveFormsModule  } from '@angular/forms';
-import { PostJobComponent } from './Authentication/post-job/post-job.component';
+import { PostJobComponent } from './Authentication/employer/post-job/post-job.component';
+import { EmployerInfoComponent } from './Authentication/employer/employer-info/employer-info.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PostJobComponent } from './Authentication/post-job/post-job.component';
     ChangePasswordComponent,
     ForgetPasswordComponent,
     ActivateEmailComponent,
-    PostJobComponent
+    PostJobComponent,
+    EmployerInfoComponent
   ],
   imports: [
     BrowserModule,
